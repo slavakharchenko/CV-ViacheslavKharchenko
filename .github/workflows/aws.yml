@@ -32,8 +32,8 @@ on:
       - main
 
 env:
-  AWS_REGION: eu-central-1                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: cv-viacheslav-kharchenko   # set this to your Amazon ECR repository name
+  AWS_REGION: eu-central-1                                           # set this to your preferred AWS region, e.g. us-west-1
+  ECR_REPOSITORY: public.ecr.aws/u7o6r2i4/cv-viacheslav-kharchenko   # set this to your Amazon ECR repository name
   ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
   ECS_CLUSTER: CV-Kharchenko-ECS-Cluster     # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
@@ -42,7 +42,7 @@ env:
                                                # containerDefinitions section of your task definition
 
 jobs:
-  deploy: 
+  deploy:
     name: Deploy
     runs-on: ubuntu-latest
     environment: production
