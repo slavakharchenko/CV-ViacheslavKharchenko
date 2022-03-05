@@ -32,15 +32,13 @@ on:
       - main
 
 env:
-  AWS_REGION: us-east-2                                          # set this to your preferred AWS region, e.g. us-west-1
+  AWS_REGION: us-east-2                                              # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: public.ecr.aws/u7o6r2i4/cv-viacheslav-kharchenko   # set this to your Amazon ECR repository name
-  ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: CV-Kharchenko-ECS-Cluster     # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
-                                               # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: MY_CONTAINER_NAME           # set this to the name of the container in the
-                                               # containerDefinitions section of your task definition
-
+  ECS_SERVICE: MY_ECS_SERVICE                                        # set this to your Amazon ECS service name
+  ECS_CLUSTER: CV-Cluster-ECS                                        # set this to your Amazon ECS cluster name
+  ECS_TASK_DEFINITION: CV-APP                                        # set this to the path to your Amazon ECS task definition
+  CONTAINER_NAME: CV-APP                                             # set this to the name of the container in the
+                                                                     # containerDefinitions section of your task definition
 jobs:
   deploy:
     name: Deploy
@@ -58,21 +56,16 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
 
-#    - name: Login to Amazon ECR
-#      id: login-ecr
-#      uses: aws-actions/amazon-ecr-login@v1
-
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
       env:
-#        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        HOST: public.ecr.aws/u7o6r2i4
         IMAGE_TAG: v1
       run: |
         # Build a docker container and
         # push it to ECR so that it can
         # be deployed to ECS.
-        echo $ECR_REGISTRY
-        aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/u7o6r2i4
+        aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin $HOST
         docker build -t $ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REPOSITORY:$IMAGE_TAG"
