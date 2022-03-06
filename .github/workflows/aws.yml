@@ -65,7 +65,7 @@ jobs:
         # Build a docker container and
         # push it to ECR so that it can
         # be deployed to ECS.
-        aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin $HOST
+        aws ecr-public get-login-password --region eu-central-1 | docker login --username AWS --password-stdin $HOST
         docker build -t $ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REPOSITORY:$IMAGE_TAG"
@@ -83,5 +83,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: ${{ env.ECS_SERVICE }}
-        cluster: arn:aws:ecs:eu-central-1:930050429294:cluster/CV-ECS-CLUSTER
+        cluster: ${{ env.ECS_CLUSTER }}
         wait-for-service-stability: true
