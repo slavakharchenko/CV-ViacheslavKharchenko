@@ -34,11 +34,11 @@ on:
 env:
   AWS_REGION: us-east-2                                              # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: public.ecr.aws/u7o6r2i4/cv-viacheslav-kharchenko   # set this to your Amazon ECR repository name
-  ECS_SERVICE: MY_ECS_SERVICE                                        # set this to your Amazon ECS service name
-  ECS_CLUSTER: CV-Cluster-ECS                                        # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: CV-APP                                        # set this to the path to your Amazon ECS task definition
+  ECS_SERVICE: CV-APP-SERVICE                                        # set this to your Amazon ECS service name
+  ECS_CLUSTER: CV-ECS-CLUSTER                                        # set this to your Amazon ECS cluster name
+  ECS_TASK_DEFINITION: .github/workflows/taskDefinition.json         # set this to the path to your Amazon ECS task definition
   CONTAINER_NAME: CV-APP                                             # set this to the name of the container in the
-                                                                     # containerDefinitions section of your task definition
+
 jobs:
   deploy:
     name: Deploy
@@ -70,18 +70,18 @@ jobs:
         docker push $ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REPOSITORY:$IMAGE_TAG"
 
-#     - name: Fill in the new image ID in the Amazon ECS task definition
-#       id: task-def
-#       uses: aws-actions/amazon-ecs-render-task-definition@v1
-#       with:
-#         task-definition: ${{ env.ECS_TASK_DEFINITION }}
-#         container-name: ${{ env.CONTAINER_NAME }}
-#         image: ${{ steps.build-image.outputs.image }}
+    - name: Fill in the new image ID in the Amazon ECS task definition
+      id: task-def
+      uses: aws-actions/amazon-ecs-render-task-definition@v1
+      with:
+        task-definition: ${{ env.ECS_TASK_DEFINITION }}
+        container-name: ${{ env.CONTAINER_NAME }}
+        image: ${{ steps.build-image.outputs.image }}
 
-#     - name: Deploy Amazon ECS task definition
-#       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
-#       with:
-#         task-definition: ${{ steps.task-def.outputs.task-definition }}
-#         service: ${{ env.ECS_SERVICE }}
-#         cluster: ${{ env.ECS_CLUSTER }}
-#         wait-for-service-stability: true
+    - name: Deploy Amazon ECS task definition
+      uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+      with:
+        task-definition: ${{ steps.task-def.outputs.task-definition }}
+        service: ${{ env.ECS_SERVICE }}
+        cluster: ${{ env.ECS_CLUSTER }}
+        wait-for-service-stability: true

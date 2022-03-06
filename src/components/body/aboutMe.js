@@ -7,7 +7,7 @@ import React from "react";
 const AboutMe = ({ aboutMe }) => {
   return (
     <div>
-      <Title title='About Me'/>
+      <Title title='About Me TEST'/>
       <Container>
         <Row>
           <Col>
