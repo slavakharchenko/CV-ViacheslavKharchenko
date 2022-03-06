@@ -52,20 +52,7 @@
   "placementConstraints": [],
   "memory": "512",
   "taskRoleArn": "arn:aws:iam::930050429294:role/ecsTaskExecutionRole",
-  "compatibilities": [
-    "EXTERNAL",
-    "EC2"
-  ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-central-1:930050429294:task-definition/CV-APP:6",
   "family": "CV-APP",
-  "requiresAttributes": [
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.task-iam-role"
-    }
-  ],
   "pidMode": null,
   "requiresCompatibilities": [
     "EC2"
@@ -73,8 +60,6 @@
   "networkMode": null,
   "runtimePlatform": null,
   "cpu": "1024",
-  "revision": 6,
-  "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
   "volumes": []
