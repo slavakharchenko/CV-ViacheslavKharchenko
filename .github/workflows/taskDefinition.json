@@ -18,6 +18,7 @@
   ],
   "memory": "512",
   "cpu": "512",
+  "executionRoleArn": "arn:aws:iam::930050429294:role/ecsTaskExecutionRole",
   "taskRoleArn": "arn:aws:iam::930050429294:role/ecsTaskExecutionRole",
   "family": "CV-APP",
   "requiresCompatibilities": [
