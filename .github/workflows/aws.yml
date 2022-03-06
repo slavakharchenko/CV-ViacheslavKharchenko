@@ -83,5 +83,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: ${{ env.ECS_SERVICE }}
-        cluster: CV-ECS-CLUSTER
+        cluster: arn:aws:ecs:eu-central-1:930050429294:cluster/CV-ECS-CLUSTER
         wait-for-service-stability: true
