@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const Header = styled.h1`
   font-size: 100px;
+  padding-bottom: 120px;
   span {
     color: rgb(239, 70, 63);
   }

@@ -1,7 +1,7 @@
 import Header from './components/header/header';
 import About from './components/body/about/about';
 import Experiences from './components/body/experiences';
-import Skill from './components/body/skill/skill';
+import Skills from './components/body/skills/skills';
 import cv from './data/curriculumVitae.data';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header/>
       <About aboutMe={cv.aboutMe}/>
-      <Skill skills={cv.skill}/>
+      <Skills skills={cv.skill}/>
       <Experiences experience={cv.experiences}/>
     </div>
   );

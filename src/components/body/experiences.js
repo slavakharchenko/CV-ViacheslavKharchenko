@@ -4,6 +4,10 @@ import styled from "styled-components";
 import Tasks from './tasks';
 import Title from "./title";
 
+const ExperiencesWrapper = styled.div`
+  color: black;
+`;
+
 const SpanName = styled.span`
   font-weight: bold;
   margin-right: 5px;
@@ -17,7 +21,7 @@ const SpanTime = styled.span`
 
 const Experiences = ({ experience }) => {
   return (
-    <div>
+    <ExperiencesWrapper>
       <Title title='Experience'/>
       <div>
         {
@@ -48,7 +52,7 @@ const Experiences = ({ experience }) => {
           )
         }
       </div>
-    </div>
+    </ExperiencesWrapper>
   );
 }
 
