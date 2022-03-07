@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Tasks from './tasks';
 import styled from "styled-components";
+import Tasks from './tasks';
 import Title from "./title";
 
 const SpanName = styled.span`
