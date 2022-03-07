@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { ListGroup } from 'react-bootstrap'
-import Title from "./title";
+import Title from "../title";
+import { Container } from "./skill.style";
 
 const DivContainer = styled.div`
   padding: 5px;
@@ -65,14 +66,14 @@ const Skill = ({ skills }) => {
 
 
   return (
-    <div>
+    <Container>
       <Title title='Skills and expertise'/>
       <div>
           <Automation automation = {automation}/>
           <Manual manual = {manual}/>
           <Technology technology = {technology}/>
       </div>
-    </div>
+    </Container>
   );
 }
 

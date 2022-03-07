@@ -1,14 +1,18 @@
-import { ContainerHeader, NavHeader, Links, Icons, Link } from './header.style'
+import {ContainerHeader, NavHeader, Links, Icons, Link, BrandContainer} from './header.style'
 import Icon from "./icon";
+import Brand from "./brand";
 
 const Header = () => {
   return (
     <ContainerHeader>
       <NavHeader>
+          <BrandContainer>
+            <Brand />
+          </BrandContainer>
           <Links>
-            <Link to="/aboutMe"> About me </Link>
-            <Link to="/skills"> Skills </Link>
-            <Link to="/experience"> Experience </Link>
+            <Link href="/aboutMe"> ABOUT </Link>
+            <Link href="/skills"> SKILLS AND EXPERTISE </Link>
+            <Link href="/experience"> EXPERIENCE </Link>
           </Links>
 
           <Icons>

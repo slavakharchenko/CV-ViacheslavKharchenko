@@ -5,13 +5,13 @@ import telegram from '../../images/telegram.svg'
 import github from '../../images/github.svg'
 
 const Container = styled.div`
-  height: 45px;
-  width: 45px;
-  margin: 15px;
+  height: 44px;
+  width: 43px;
+  margin: 14px;
   @media (max-width: 768px) {
     height: 36px;
     width: 36px;  
-    margin: 15px;
+    margin: 13px;
   }
 `
 
@@ -50,7 +50,7 @@ const Icon = ({ name }) => {
   const { link, svg } = getIcon(name);
   return (
     <Container>
-      <a target="_blank" href={link}>
+      <a target="_blank" rel="noreferrer" href={link}>
         <Image src={svg} alt={name}/>
       </a>
     </Container>

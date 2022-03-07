@@ -1,11 +1,10 @@
 const cv = {
     aboutMe: {
-        position: 'Automation QA Lead / SDET',
-        age: '21.01.1992',
-        location: 'Ukraine/Kiyv',
+        position: 'Automation QA Lead/SDET',
+        content: 'Hey, how are you, buddy? Hope all is well! I am Viacheslav Kharchenko and this is my CV.'
     },
     experiences: [
-        { 
+        {
             position: 'Senior Automation QA / AQA Lead',
             company: 'Parimatch Tech',
             duration: 'AQA: March 2020 – August 2022, AQA Lead: September 2022 - till present',
@@ -30,7 +29,7 @@ const cv = {
                 'Create, execute, maintain automation scripts',
                 'Help to configure infrastructure for automation',
                 'Visual testing with Applitools',
-                'Monitor, maintain, and provide reports for bug tracking and defect resolution to the team and assist in process improvement in these areas',               
+                'Monitor, maintain, and provide reports for bug tracking and defect resolution to the team and assist in process improvement in these areas',
             ],
             technologicalStack: 'TypeScript, Webdriver.io, Selenoid, GGR, Jasmine, Jenkins, Report Portal, Applitools'
         }

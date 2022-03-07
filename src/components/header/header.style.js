@@ -7,42 +7,61 @@ export const ContainerHeader = styled.div`
 `;
 
 export const NavHeader = styled.nav`
-  top: 0;
-  position: fixed;
-  z-index: 1;
-  display: flex;
+  height: 120px;
   width: 100%;
-  height: 100px;
-  background: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-areas: "brand links icons";
+  
+  // Fixed header
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  background: rgb(36,32,43);
+
   @media (max-width: 768px) {
-    display: block;
-    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "brand icons"  
+                         "links links";
   }
 `
 
 export const Links = styled.div`
+  grid-area: links;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 50%;
-  margin-left: 60px;
 
   @media (max-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-left: 0px;
-    margin-top: 15px;
+  }
+`
+
+export const Link = styled.a`
+  text-decoration: none;
+  color: white; 
+  font-size: 20px;
+  padding-right: 60px;
+  
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding-right: 0px;
+    margin: 0 10px;
   }
 `
 
 export const Icons = styled.div`
+  grid-area: icons;
   display: flex;  
   justify-content: right;
   align-items: center;
-  width: 50%;
-  margin-right: 60px;
+  margin-right: 70px;
 
   @media (max-width: 768px) {
     display: flex;
@@ -53,15 +72,18 @@ export const Icons = styled.div`
   }
 `
 
-export const Link = styled(NavLink)`
-  text-decoration: none;
-  color: grey; 
-  font-size: 30px;
-  padding-right: 20px;
-  
+export const BrandContainer = styled.div`
+  grid-area: brand;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  margin-right: 70px;
+
   @media (max-width: 768px) {
-    font-size: 20px;
-    padding-right: 0px;
-    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    width: 100%;
   }
 `
