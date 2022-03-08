@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   margin-top: 160px;
 
-  padding-bottom: 120px;
-
   margin-left: 70px;
   margin-right: 70px;
   
@@ -31,4 +29,12 @@ export const SkillWrapper = styled.div`
 
 export const Tech = styled.div`
   grid-area: tech;
+`;
+
+export const Auto = styled.div`
+  grid-area: automation;
+`;
+
+export const Manual = styled.div`
+  grid-area: manual;
 `;

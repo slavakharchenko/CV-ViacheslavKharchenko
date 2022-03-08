@@ -4,9 +4,9 @@ import {ListItem, ListWrapper, SkillWrapper} from './skill.style';
 
 const Skill = ({ skills, headerText }) => {
   return (
-    <SkillWrapper headerText={headerText}>
+    <SkillWrapper headertext={headerText}>
       <h4>{headerText}</h4>
-      <ListWrapper headerText={headerText} variant="flush">
+      <ListWrapper headertext={headerText} variant="flush">
         {
           skills.map((text, i) =>
             <ListItem key={i}>

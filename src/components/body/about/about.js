@@ -9,7 +9,7 @@ import {
 } from "./about.style";
 import DownloadButton from './components/downloadButton';
 import Photo from './components/photo';
-import Title from '../title';
+import Title from '../../title';
 import Content from "./components/content";
 
 const About = ({ aboutMe }) => {
@@ -17,7 +17,7 @@ const About = ({ aboutMe }) => {
     <Container>
       <AboutWrapper>
         <ContentWrapper>
-          <Title title="HELLO WORLD"/>
+          <Title paddingBottom='60px' title="HELLO WORLD"/>
           <Content content={aboutMe.content}/>
           <DownloadWrapper>
             {aboutMe.position}

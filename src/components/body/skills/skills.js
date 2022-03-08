@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Title from '../title';
+import Title from '../../title';
 import Skill from './component/skill';
-import {Container, SkillWrapper, Tech} from './skills.style';
+import Chips from "./component/chips";
+import EnglishLevel from "./component/english";
+
+import {Auto, Container, Manual, SkillWrapper, Tech} from './skills.style';
 
 const Skills = ({ skills }) => {
   const { automation, manual, technology } = skills;
@@ -11,10 +14,18 @@ const Skills = ({ skills }) => {
     <Container>
       <Title title='SKILLS AND EXPERTISE'/>
         <SkillWrapper>
-          <Skill skills = {automation} headerText="AUTOMATION TESTING" gridArea="automation"/>
-          <Skill skills = {manual} headerText="MANUAL TESTING" gridArea="manual"/>
+          <Auto>
+            <Skill skills = {automation.skills} headerText="AUTOMATION TESTING"/>
+            <Chips chips={automation.chips}/>
+          </Auto>
+          <Manual>
+            <Skill skills = {manual.skills} headerText="MANUAL TESTING"/>
+            <Chips chips={manual.chips}/>
+            <EnglishLevel/>
+          </Manual>
           <Tech>
-            <Skill skills = {technology} headerText="TECHNOLOGICAL STACK" gridArea="tech"/>
+            <Skill skills = {technology.skills} headerText="TECHNOLOGICAL STACK"/>
+            <Chips chips={technology.chips}/>
           </Tech>
       </SkillWrapper>
     </Container>
@@ -22,9 +33,9 @@ const Skills = ({ skills }) => {
 }
 
 Skills.propTypes = {
-  automation: PropTypes.array,
-  manual: PropTypes.array,
-  technology: PropTypes.array,
+  automation: PropTypes.object,
+  manual: PropTypes.object,
+  technology: PropTypes.object,
 };
 
 export default Skills;

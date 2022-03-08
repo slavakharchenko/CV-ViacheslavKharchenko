@@ -35,35 +35,45 @@ const cv = {
         }
     ],
     skill: {
-        automation: [
-            'Experience in creating AQA processes from scratch. Hiring and mentoring teammates',
-            'Experience in writing integration tests for microservices. Integrated them in the pipeline for running it for each commit',
-            'Experience in writing automated UI/API tests: JavaScript/Typescript (WebdriverIO, Mocha, Chai)',
-            'Experience in writing automated UI/API tests: Python (Pytest, Selenium)',
-            'Experience in visual testing with Applitools',
-            'Familiar with writing performance tests with JMeter',
-        ],
-        manual: [
-            'Experience in the use different types of testing (functional, GUI, usability, smoke, sanity, regression)',
-            'Practical skills in the creation of test documentation (checklists, test cases, bug reports)',
-            'Experience in testing API',
-            'Experience in testing analytics',
-        ],
-        technology: [
-            'Language: JavaScript/TypeScript (preferable), Python',
-            'Test runners: Mocha, Jasmine, Pytest',
-            'Frameworks: WebdriverIO, Selenium Webdriver, familiar with Cypress',
-            'Visual testing tools: Applitools',
-            'Git: GitLab, GitHub',
-            'CI/CD tools: Travis CI, Jenkins, Gitlab',
-            'SQL/NoSQL Databases: PostgreSQL, MongoDB, Redis, Memcached',
-            'Reporting systems: ReportPortal, familiar with Allure',
-            'Test management tools: TestRail',
-            'Selenium servers: Selenoid, GGR, Moon',
-            'Containerizations: Docker/Docker-compose',
-            'API: Postman',
-            'Familiar with ELK stack, Grafana, JMeter, AWS (EC2 instances, S3 buckets and etc), Kafka, HTTP, HTML, CSS, XML, XPath',
-        ],
+        automation: {
+            skills: [
+                'Experience in creating AQA processes from scratch. Hiring and mentoring teammates',
+                'Experience in writing integration tests for microservices. Integrated them in the pipeline for running it for each commit',
+                'Experience in writing automated UI/API tests: JavaScript/Typescript (WebdriverIO, Mocha, Chai)',
+                'Experience in writing automated UI/API tests: Python (Pytest, Selenium)',
+                'Experience in visual testing with Applitools',
+                'Familiar with writing performance tests with JMeter',
+            ],
+            chips: ['UI/API testing', 'Integration testing', 'Visual testing']
+        },
+        manual: {
+            skills: [
+                'Experience in the use different types of testing (functional, GUI, usability, smoke, sanity, regression)',
+                'Practical skills in the creation of test documentation (checklists, test cases, bug reports)',
+                'Experience in testing Localization',
+                'Experience in testing API',
+                'Experience in testing Analytics',
+            ],
+            chips: ['Documentation', 'Api', 'Analytics', 'Localization'],
+        },
+        technology: {
+            skills: [
+                'Language: JavaScript/TypeScript (preferable), Python',
+                'Test runners: Mocha, Jasmine, Pytest',
+                'Frameworks: WebdriverIO, Selenium Webdriver, familiar with Cypress',
+                'Visual testing tools: Applitools',
+                'Git: GitLab, GitHub',
+                'CI/CD tools: Travis CI, Jenkins, Gitlab',
+                'SQL/NoSQL Databases: PostgreSQL, MongoDB, Redis, Memcached',
+                'Reporting systems: ReportPortal, familiar with Allure',
+                'Test management tools: TestRail',
+                'Selenium servers: Selenoid, GGR, Moon',
+                'Containerization: Docker/Docker-compose',
+                'API: Postman',
+                'Familiar with ELK stack, Grafana, JMeter, AWS (EC2 instances, S3 buckets and etc), Kafka, HTTP, HTML, CSS, XML, XPath',
+            ],
+            chips: ['JavaScript', 'TypeScript', 'Python']
+        }
     },
 }
 

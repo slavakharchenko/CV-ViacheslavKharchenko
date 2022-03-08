@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {ListGroup} from "react-bootstrap";
 import '../skills.style'
 
-const isTechStack = (props) => props.headerText === 'TECHNOLOGICAL STACK';
+const isTechStack = (props) => props.headertext === 'TECHNOLOGICAL STACK';
 
 export const ListWrapper = styled(ListGroup)`
   font-size: 20px;
@@ -20,5 +20,5 @@ export const ListItem = styled(ListGroup.Item)`
 `
 
 export const SkillWrapper = styled.div`
-  padding-top: ${props => isTechStack(props) ? '40px' : '0px'}
+  padding-top: ${props => isTechStack(props) ? '100px' : '0px'}
 `

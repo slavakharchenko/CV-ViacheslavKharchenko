@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin-top: 120px;
-  background: rgb(36,32,43);
+  background-color: rgb(36,32,43);
   background-size: 100%;
 `;
 
