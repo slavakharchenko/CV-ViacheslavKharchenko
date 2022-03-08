@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from "styled-components";
-import Slash from "./slash";
+import LowLine from "./lowLine";
 
 const Header = styled.h1`
   font-size: 100px;
@@ -15,7 +15,7 @@ const Title = ({ title, paddingBottom = '120px' }) => {
   return (
     <Header paddingBottom={paddingBottom}>
       {title}
-      <Slash size={'100px'}/>
+      <LowLine size={'100px'}/>
     </Header>
   );
 }

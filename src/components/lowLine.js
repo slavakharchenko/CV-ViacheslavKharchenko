@@ -2,19 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from "styled-components";
 
-const SlashWrapper = styled.span`
+const LowLineWrapper = styled.span`
   font-size: ${({ size }) => size };
   color: rgb(239, 70, 63);
 `;
 
-const Slash = ({ size }) => {
+const LowLine = ({ size }) => {
   return (
-      <SlashWrapper size={size}>_</SlashWrapper>
+      <LowLineWrapper size={size}>_</LowLineWrapper>
   );
 }
 
-Slash.propTypes = {
+LowLine.propTypes = {
   size: PropTypes.string,
 };
 
-export default Slash;
+export default LowLine;

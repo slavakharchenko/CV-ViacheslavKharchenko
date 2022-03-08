@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-import Slash from "../slash";
+import LowLine from "../lowLine";
 
 export const BannerWrapper = styled.div`
   height: 700px;
-  //display: flex;
-  //flex-direction: column;
   font-size: 140px;
   margin-right: 70px;
   margin-left: 70px;
@@ -37,7 +35,7 @@ const Banner = () => {
         KEEP CALM &
       </FirstPhrase>
       <SecondPhrase>
-        WRITE CODE <Slash size={'140px'}/>
+        WRITE CODE <LowLine size={'140px'}/>
       </SecondPhrase>
     </BannerWrapper>
   );

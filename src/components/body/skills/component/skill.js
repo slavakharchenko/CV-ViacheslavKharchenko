@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {ListItem, ListWrapper, SkillWrapper} from './skill.style';
+import { ListItem, ListWrapper, SkillWrapper } from './skill.style';
+import Slashes from "../../../slashes";
 
 const Skill = ({ skills, headerText }) => {
   return (
@@ -10,7 +11,7 @@ const Skill = ({ skills, headerText }) => {
         {
           skills.map((text, i) =>
             <ListItem key={i}>
-              <span>//</span> {text}
+              <Slashes/> {text}
             </ListItem>
           )
         }

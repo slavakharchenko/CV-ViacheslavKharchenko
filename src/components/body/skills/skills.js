@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Title from '../../title';
 import Skill from './component/skill';
-import Chips from "./component/chips";
+import Chips from "../../chips";
 import EnglishLevel from "./component/english";
 
 import {Auto, Container, Manual, SkillWrapper, Tech} from './skills.style';

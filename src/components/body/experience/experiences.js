@@ -1,42 +1,37 @@
 import PropTypes from 'prop-types';
 import Tasks from './components/tasks';
 import Title from "../../title";
-import {Container, ExperiencesWrapper, SpanName, SpanTime} from "./experiences.style";
+import Link from "./components/link";
+import Chips from "../../chips";
+import {
+  Container,
+  Duration,
+  ExperiencesWrapper,
+  ExperienceWrapper,
+  GridWrapper,
+  Position,
+  Project
+} from "./experiences.style";
 
 const Experiences = ({ experience }) => {
   return (
     <Container>
       <ExperiencesWrapper>
         <Title title='Experience'/>
-        <div>
+        <GridWrapper>
           {
             experience.map((e, i) =>
-              <div key={i}>
-                <div>
-                  <SpanName>Position:</SpanName>src/components/body/experiences.js
-                  <span>{e.position}</span>
-                </div>
-                <div>
-                  <SpanName>Company:</SpanName>
-                  <span>{e.company}</span>
-                  <SpanTime>({e.duration})</SpanTime>
-                </div>
-                <div>
-                  <SpanName>Projects:</SpanName>
-                  <span>{e.projectLinks}</span>
-                </div>
+              <ExperienceWrapper key={i}>
+                <Project>{e.company.toUpperCase()}</Project>
+                <Position>{e.position}</Position>
+                <Duration>{e.duration}</Duration>
                 <Tasks tasks={e.tasks}/>
-                <div>
-                  <SpanName>Technological stack:</SpanName>
-                  <span>{e.technologicalStack}</span>
-                </div>
-                {
-                  experience.length - 1 === i ? undefined : <hr/>
-                }
-              </div>
+                <Link links={e.projectLinks}/>
+                <Chips chips={e.technologicalStack} background={`rgb(239, 70, 63)`} color='white'/>
+              </ExperienceWrapper>
             )
           }
-        </div>
+        </GridWrapper>
       </ExperiencesWrapper>
     </Container>
   );
@@ -49,7 +44,7 @@ Experiences.propTypes = {
     duration: PropTypes.string,
     projectLinks: PropTypes.arrayOf(PropTypes.string),
     tasks: PropTypes.arrayOf(PropTypes.string),
-    technologicalStack: PropTypes.string
+    technologicalStack: PropTypes.arrayOf(PropTypes.string)
   }))
 };
 

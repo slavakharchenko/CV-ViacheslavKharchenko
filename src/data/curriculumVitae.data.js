@@ -5,7 +5,7 @@ const cv = {
     },
     experiences: [
         {
-            position: 'Senior Automation QA / AQA Lead',
+            position: 'Sr. Automation QA / AQA Lead ',
             company: 'Parimatch Tech',
             duration: 'AQA: March 2020 – August 2022, AQA Lead: September 2022 - till present',
             projectLinks: ['https://en.parimatch.com/en/'],
@@ -16,23 +16,52 @@ const cv = {
                 'Create docker-compose files for up services and testing them in isolation',
                 'Work with Gitlab CI/CD',
                 'Integrate tests result with the test management system, reporting system, slack bot',
-                'Write performance tests for services. Send a lot of messages in Kafka and wait until a service resolve all of them',
+                'Write performance tests for services (Sending batch of messages in Kafka and wait until a service resolve all of them)',
             ],
-            technologicalStack: 'JavaScript, TypeScript, Webdriver.io, Mocha, Chai, Moon, Docker, Docker-compose ReportPortal, TestRail, Kafka, Postgres, Redis, EventStore, ELK, AWS, K8s'
+            technologicalStack: ['JavaScript', 'TypeScript', 'Webdriver.io', 'Mocha', 'Moon', 'Docker', 'ReportPortal', 'TestRail', 'Kafka', 'Postgres', 'Redis', 'EventStore', 'ELK Stack', 'AWS', 'K8s']
         },
         {
-            position: 'Senior Automation QA',
+            position: 'Sr. Automation QA',
             company: 'Ciklum',
             duration: 'September 2018 – March 2020',
-            projectLinks: ['https://www.madlan.co.il/' , 'https://www.localize.city/'],
+            projectLinks: ['https://www.madlan.co.il/' , 'https://www.localize.city/', 'https://www.nzz.ch/'],
             tasks: [
                 'Create, execute, maintain automation scripts',
                 'Help to configure infrastructure for automation',
                 'Visual testing with Applitools',
                 'Monitor, maintain, and provide reports for bug tracking and defect resolution to the team and assist in process improvement in these areas',
             ],
-            technologicalStack: 'TypeScript, Webdriver.io, Selenoid, GGR, Jasmine, Jenkins, Report Portal, Applitools'
-        }
+            technologicalStack: ['JavaScript', 'TypeScript', 'Webdriver.io', 'Selenoid', 'GGR', 'Jasmine', 'Mocha', 'Travis CI', 'Jenkins', 'Report Portal', 'Applitools']
+        },
+        {
+            position: 'Automation QA',
+            company: 'Evo.company',
+            duration: 'Manual QA: December 2016 - September 2017, AQA: December 2017 – August 2018',
+            projectLinks: ['https://prom.ua/'],
+            tasks: [
+                'Create, execute, maintain automation scripts',
+                'Monitor, maintain, and provide reports for bug tracking and defect resolution to the team and to assist in process improvement in these areas',
+                'Functional and non-functional testing of web-application, testing specifications and creating test documentation (checklists, test cases, bug reports)',
+                'Testing API, Analytics, Localization',
+                'Monitoring errors in Kibana, Grafana',
+            ],
+            technologicalStack: ['Python', 'Jenkins', 'Allure', 'Selenium', 'Selenium grid', 'Pytest', 'ELK stack', 'Grafana']
+        },
+        {
+            position: 'Manual QA Engineer',
+            company: 'ENIXAN Entertainment',
+            duration: 'March 2015 – October 2016',
+            projectLinks: [
+                'https://apps.facebook.com/royalgardengame/',
+                'https://apps.facebook.com/cloudkingdomgame/',
+                'https://apps.facebook.com/secretgardengame/'
+            ],
+            tasks: [
+                'Testing flash for social networks',
+                'Testing mobile games'
+            ],
+            technologicalStack: ['ActionScript', 'MongoDB', 'SVN', 'Unity', 'C#']
+        },
     ],
     skill: {
         automation: {
