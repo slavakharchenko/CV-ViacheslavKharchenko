@@ -104,6 +104,11 @@ const cv = {
             chips: ['JavaScript', 'TypeScript', 'Python']
         }
     },
+    info: {
+        email: 'slava.charodey@gmail.com',
+        phone: '+38(099)504-4113',
+        location: 'Kyiv, Ukraine'
+    }
 }
 
 export default cv;

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import linkedIn from '../../images/linkedIn.svg'
-import email from '../../images/email.svg'
-import telegram from '../../images/telegram.svg'
-import github from '../../images/github.svg'
+import linkedIn from '../images/linkedIn.svg'
+import email from '../images/email.svg'
+import telegram from '../images/telegram.svg'
+import github from '../images/github.svg'
 
 const Container = styled.div`
   height: 44px;

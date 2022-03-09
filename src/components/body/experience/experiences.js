@@ -17,7 +17,7 @@ const Experiences = ({ experience }) => {
   return (
     <Container>
       <ExperiencesWrapper>
-        <Title title='Experience'/>
+        <Title title='EXPERIENCE'/>
         <GridWrapper>
           {
             experience.map((e, i) =>

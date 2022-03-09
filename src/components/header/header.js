@@ -1,6 +1,6 @@
 import {ContainerHeader, NavHeader, Links, Icons, Link, BrandContainer} from './header.style'
-import Icon from "./icon";
-import Brand from "./brand";
+import Icon from "../icon";
+import Brand from "./components/brand";
 
 const Header = () => {
   return (

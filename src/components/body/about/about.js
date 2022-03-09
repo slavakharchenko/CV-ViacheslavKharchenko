@@ -34,8 +34,7 @@ const About = ({ aboutMe }) => {
 
 About.propTypes = {
   position: PropTypes.string,
-  age: PropTypes.string,
-  location: PropTypes.string,
+  content: PropTypes.string,
 };
 
 export default About;

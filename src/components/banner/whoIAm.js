@@ -10,13 +10,12 @@ export const BannerWrapper = styled.div`
   font-size: 140px;
   margin-right: 70px;
   margin-left: 70px;
+  margin-bottom: 70px;
 `;
 
 export const FirstPhrase = styled.div`
   height: 200px;
-
   display: flex;
-  align-items: flex-end;
   justify-content: left;
   color: rgb(239, 70, 63);
 `;

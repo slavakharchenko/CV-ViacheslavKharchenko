@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import brand from '../../images/brand.svg';
+import brand from '../../../images/brand.svg';
 
 const Container = styled.div`
   height: 28px;
