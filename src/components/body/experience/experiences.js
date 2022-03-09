@@ -10,30 +10,32 @@ import {
   ExperienceWrapper,
   GridWrapper,
   Position,
-  Project
+  Project, ScrollContainer
 } from "./experiences.style";
 
 const Experiences = ({ experience }) => {
   return (
-    <Container id='experience'>
-      <ExperiencesWrapper>
-        <Title title='EXPERIENCE'/>
-        <GridWrapper>
-          {
-            experience.map((e, i) =>
-              <ExperienceWrapper key={i}>
-                <Project>{e.company.toUpperCase()}</Project>
-                <Position>{e.position}</Position>
-                <Duration>{e.duration}</Duration>
-                <Tasks tasks={e.tasks}/>
-                <Link links={e.projectLinks}/>
-                <Chips chips={e.technologicalStack} background={`rgb(239, 70, 63)`} color='white'/>
-              </ExperienceWrapper>
-            )
-          }
-        </GridWrapper>
-      </ExperiencesWrapper>
-    </Container>
+    <ScrollContainer id='experience'>
+      <Container>
+        <ExperiencesWrapper>
+          <Title title='EXPERIENCE'/>
+          <GridWrapper>
+            {
+              experience.map((e, i) =>
+                <ExperienceWrapper key={i}>
+                  <Project>{e.company.toUpperCase()}</Project>
+                  <Position>{e.position}</Position>
+                  <Duration>{e.duration}</Duration>
+                  <Tasks tasks={e.tasks}/>
+                  <Link links={e.projectLinks}/>
+                  <Chips chips={e.technologicalStack} background={`rgb(239, 70, 63)`} color='white'/>
+                </ExperienceWrapper>
+              )
+            }
+          </GridWrapper>
+        </ExperiencesWrapper>
+      </Container>
+    </ScrollContainer>
   );
 }
 

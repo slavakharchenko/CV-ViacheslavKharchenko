@@ -17,7 +17,7 @@ export const FooterWrapper = styled.footer`
 export const ContentWrapper = styled.div` 
   width: 550px;
   display: block;
-  margin-left: 70px;
+  margin-left: 100px;
 
   div {
     font-size: 24px;
@@ -25,10 +25,13 @@ export const ContentWrapper = styled.div`
 `
 
 export const ContactWrapper = styled.div`
-  width: 300px;
-  display: block;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  flex-direction: column;
+
   padding-top: 30px;
-  margin-right: 70px;
+  margin-right: 100px;
   font-size: 18px;
 `
 

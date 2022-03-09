@@ -8,8 +8,8 @@ import hobbyThree from "../../images/hobby3.png";
 export const BannerWrapper = styled.div`
   height: 700px;
   font-size: 140px;
-  margin-right: 70px;
-  margin-left: 70px;
+  margin-right: 100px;
+  margin-left: 100px;
   margin-bottom: 70px;
 `;
 
@@ -28,6 +28,9 @@ export const Images = styled.div`
 `;
 
 export const ImagesWrapperOne = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
     max-width: 75%;
     max-height: 75%;
@@ -35,6 +38,10 @@ export const ImagesWrapperOne = styled.div`
   }
 `
 export const ImagesWrapperTwo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
   img {
     max-width: 75%;
     max-height: 75%;
@@ -43,6 +50,10 @@ export const ImagesWrapperTwo = styled.div`
 
 `
 export const ImagesWrapperThree = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   img {
     max-width: 75%;
     max-height: 75%;

@@ -5,8 +5,8 @@ import LowLine from "../lowLine";
 export const BannerWrapper = styled.div`
   height: 700px;
   font-size: 140px;
-  margin-right: 70px;
-  margin-left: 70px;
+  margin-right: 100px;
+  margin-left: 100px;
 `;
 
 export const FirstPhrase = styled.div`

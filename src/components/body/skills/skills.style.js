@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
+export const ScrollContainer = styled.div`
+  overflow-y: scroll;
+`;
+
 export const Container = styled.section`
   margin-top: 160px;
 
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
   
   color: black;
   overflow-y: scroll;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerHeader = styled.div`
+export const ContainerHeader = styled.header`
   width: 100%;
   height: 100%;
 `;
@@ -60,7 +60,7 @@ export const Icons = styled.div`
   display: flex;  
   justify-content: right;
   align-items: center;
-  margin-right: 70px;
+  margin-right: 100px;
 
   @media (max-width: 768px) {
     display: flex;
@@ -76,6 +76,7 @@ export const BrandContainer = styled.div`
   display: flex;  
   justify-content: center;
   align-items: center;
+  margin-left: 40px;
   margin-right: 70px;
 
   @media (max-width: 768px) {

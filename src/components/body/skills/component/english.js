@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const EnglishWrapper = styled.div`
   font-size: 32px;
-  padding-top: 50px;
+  padding-top: 50px;  
+  font-weight: bold;
 
   span:first-child {
     color: rgb(239, 70, 63);

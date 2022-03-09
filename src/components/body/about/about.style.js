@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const ScrollContainer = styled.div`
+  overflow-y: scroll;
+`;
+
 export const Container = styled.section`
   margin-top: 120px;
   background-color: rgb(36,32,43);
@@ -12,13 +16,11 @@ export const AboutWrapper = styled.div`
   grid-template-areas: "content photo";
   grid-column-gap: 20px;
   
-  margin-top: 120px;
-  
   padding-top: 120px;
   padding-bottom: 120px;
   
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
 `
 
 export const ImageWrapper = styled.div`
@@ -40,7 +42,7 @@ export const ContentWrapper = styled.div`
   grid-area: content;
   display: flex;
   flex-direction: column;
-  width: 850px;
+  width: 950px;
 `
 
 
