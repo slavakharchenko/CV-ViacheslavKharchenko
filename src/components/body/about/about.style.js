@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   margin-top: 120px;
   background-color: rgb(36,32,43);
   background-size: 100%;
@@ -23,6 +23,7 @@ export const AboutWrapper = styled.div`
 
 export const ImageWrapper = styled.div`
   grid-area: photo;
+  width: 850px;
 `
 
 export const DownloadWrapper = styled.div`
@@ -31,7 +32,7 @@ export const DownloadWrapper = styled.div`
   color: rgb(239, 70, 63);
   
   button {
-    margin-left: 100px;
+    margin-left: 140px;
   }
 `
 
@@ -39,6 +40,7 @@ export const ContentWrapper = styled.div`
   grid-area: content;
   display: flex;
   flex-direction: column;
+  width: 850px;
 `
 
 

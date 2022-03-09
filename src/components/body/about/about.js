@@ -14,7 +14,7 @@ import Content from "./components/content";
 
 const About = ({ aboutMe }) => {
   return (
-    <Container>
+    <Container  id='aboutMe'>
       <AboutWrapper>
         <ContentWrapper>
           <Title paddingBottom='60px' title="HELLO WORLD"/>

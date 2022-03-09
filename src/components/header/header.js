@@ -10,9 +10,9 @@ const Header = () => {
             <Brand />
           </BrandContainer>
           <Links>
-            <Link href="/aboutMe"> ABOUT </Link>
-            <Link href="/skills"> SKILLS AND EXPERTISE </Link>
-            <Link href="/experience"> EXPERIENCE </Link>
+            <Link href="#aboutMe"> ABOUT </Link>
+            <Link href="#skills"> SKILLS AND EXPERTISE </Link>
+            <Link href="#experience"> EXPERIENCE </Link>
           </Links>
 
           <Icons>

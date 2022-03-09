@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   margin-top: 160px;
 
   margin-left: 70px;
   margin-right: 70px;
   
   color: black;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 `;
 
 export const SkillWrapper = styled.div`

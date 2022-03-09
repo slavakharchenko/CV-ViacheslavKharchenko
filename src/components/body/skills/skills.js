@@ -11,7 +11,7 @@ const Skills = ({ skills }) => {
   const { automation, manual, technology } = skills;
 
   return (
-    <Container>
+    <Container id='skills'>
       <Title title='SKILLS AND EXPERTISE'/>
         <SkillWrapper>
           <Auto>
