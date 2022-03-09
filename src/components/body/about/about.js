@@ -5,7 +5,8 @@ import {
   AboutWrapper,
   ContentWrapper,
   ImageWrapper,
-  DownloadWrapper, ScrollContainer,
+  DownloadWrapper,
+  ScrollContainer,
 } from "./about.style";
 import DownloadButton from './components/downloadButton';
 import Photo from './components/photo';
