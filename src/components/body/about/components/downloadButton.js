@@ -9,6 +9,8 @@ const Button = styled.button`
   cursor: pointer;
   padding: 12px 30px;
   margin: 15px;
+  max-width: 300px;
+  width: 100%;
   
   a {
     text-decoration: none;
@@ -17,6 +19,10 @@ const Button = styled.button`
   
   :hover {
     background-color: rgb(236, 26, 19);
+  }
+  
+  @media (max-width: 768px) {
+    margin: 15px 0px 0px 0px;
   }
 `
 

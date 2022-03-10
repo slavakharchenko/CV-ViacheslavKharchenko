@@ -11,13 +11,24 @@ export const BannerWrapper = styled.div`
   margin-right: 100px;
   margin-left: 100px;
   margin-bottom: 70px;
+
+  @media (max-width: 768px) {
+    height: 700px;
+    font-size: 40px;
+    margin: 40px 10px;
+  }
 `;
 
 export const FirstPhrase = styled.div`
   height: 200px;
   display: flex;
-  justify-content: left;
+  justify-content: left;    
+  align-items: center;
   color: rgb(239, 70, 63);
+
+  @media (max-width: 768px) {
+    height: 100px;
+  }
 `;
 
 export const Images = styled.div`
@@ -25,51 +36,41 @@ export const Images = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
 
-export const ImagesWrapperOne = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   img {
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 95%;
+    max-height: 95%;
+  }
+
+  img:nth-child(odd) {
     transform: rotate(-4.95deg);
   }
-`
-export const ImagesWrapperTwo = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    
-  img {
-    max-width: 75%;
-    max-height: 75%;
+
+  img:nth-child(even) {
     transform: rotate(4.95deg);
   }
-
-`
-export const ImagesWrapperThree = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   
-  img {
-    max-width: 75%;
-    max-height: 75%;
-    transform: rotate(-4.95deg);
+  @media (max-width: 768px) {
+    height: 500px;
+    flex-direction: column;
+    img {
+      max-height: 350px;
+      max-width: 250px;
+    }
   }
-`
+`;
 
 export const SecondPhrase = styled.div`
   height: 200px;
-
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: right;
   color: black;
-`;
 
+  @media (max-width: 768px) {
+    height: 100px;
+  }
+`;
 
 const WhoIAm = () => {
   return (
@@ -78,17 +79,9 @@ const WhoIAm = () => {
         IT'S WHO I AM
       </FirstPhrase>
       <Images>
-        <ImagesWrapperOne>
-          <img src={hobbyOne} alt='hobbies'/>
-        </ImagesWrapperOne>
-
-        <ImagesWrapperTwo>
-          <img src={hobbyTwo} alt='hobbies'/>
-        </ImagesWrapperTwo>
-
-        <ImagesWrapperThree>
-          <img src={hobbyThree} alt='hobbies'/>
-        </ImagesWrapperThree>
+        <img src={hobbyOne} alt='hobbies'/>
+        <img src={hobbyTwo} alt='hobbies'/>
+        <img src={hobbyThree} alt='hobbies'/>
       </Images>
       <SecondPhrase>
         MY HOBBIES <LowLine size={'140px'}/>

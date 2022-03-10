@@ -52,9 +52,9 @@ const cv = {
             company: 'ENIXAN Entertainment',
             duration: 'March 2015 – October 2016',
             projectLinks: [
-                'https://apps.facebook.com/royalgardengame/',
-                'https://apps.facebook.com/cloudkingdomgame/',
-                'https://apps.facebook.com/secretgardengame/'
+                // 'https://apps.facebook.com/royalgardengame/',
+                // 'https://apps.facebook.com/cloudkingdomgame/',
+                // 'https://apps.facebook.com/secretgardengame/'
             ],
             tasks: [
                 'Testing flash for social networks',

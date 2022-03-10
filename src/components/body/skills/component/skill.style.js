@@ -12,7 +12,16 @@ export const ListWrapper = styled(ListGroup)`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 80px;
-  ` : undefined}
+  ` : undefined};
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding-bottom: 16px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+  }
 `
 
 export const ListItem = styled(ListGroup.Item)`
@@ -20,5 +29,9 @@ export const ListItem = styled(ListGroup.Item)`
 `
 
 export const SkillWrapper = styled.div`
-  padding-top: ${props => isTechStack(props) ? '100px' : '0px'}
+  padding-top: ${props => isTechStack(props) ? '100px' : '0px'};
+
+  @media (max-width: 768px) {
+    padding-top: 0px;
+  }
 `

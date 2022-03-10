@@ -1,22 +1,21 @@
 import styled from 'styled-components'
 import photo from '../../../../images/photo.png'
 
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
 const Image = styled.img`
-  height: 390px;
-  width: 390px;
+  max-height: 350px;
+  max-width: 350px;
+  width: 100%;
+  height: 100%;
+  
+  @media (max-width: 768px) {
+    max-height: 250px;
+    max-width: 250px;
+  }
 `
 
 const Photo = () => {
   return (
-    <Wrapper>
-      <Image src={photo} alt='Photo'/>
-    </Wrapper>
+    <Image src={photo} alt='Photo'/>
   );
 }
 

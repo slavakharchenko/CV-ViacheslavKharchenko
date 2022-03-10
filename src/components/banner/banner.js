@@ -7,6 +7,13 @@ export const BannerWrapper = styled.div`
   font-size: 140px;
   margin-right: 100px;
   margin-left: 100px;
+
+  @media (max-width: 768px) {
+    height: 350px;
+    font-size: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 `;
 
 export const FirstPhrase = styled.div`
@@ -16,6 +23,13 @@ export const FirstPhrase = styled.div`
   align-items: flex-end;
   justify-content: left;
   color: rgb(239, 70, 63);
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 175px;
+  }
 `;
 
 export const SecondPhrase = styled.div`
@@ -25,6 +39,13 @@ export const SecondPhrase = styled.div`
   align-items: flex-start;
   justify-content: right;
   color: black;
+  
+  @media (max-width: 768px) {
+    height: 175px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 `;
 
 

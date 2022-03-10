@@ -1,30 +1,47 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  width: 100%;
-  height: 100%;
-`;
-
 export const FooterWrapper = styled.footer`
   height: 380px;
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template: 'content contact';
   background: rgb(36,32,43);
   padding-top: 60px;
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template: 'content' 
+                    'contact';
+    padding: 30px 0px 30px 0px;
+  }
 `
 
 export const ContentWrapper = styled.div` 
-  width: 550px;
-  display: block;
+  grid-area: content;
   margin-left: 100px;
 
   div {
     font-size: 24px;
   }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-left: 0px;
+      
+    div {
+      font-size: 16px;
+      text-align:center;
+    }
+  }
 `
 
 export const ContactWrapper = styled.div`
+  grid-area: contact;
   display: flex;
   justify-content: right;
   align-items: flex-end;
@@ -33,6 +50,14 @@ export const ContactWrapper = styled.div`
   padding-top: 30px;
   margin-right: 100px;
   font-size: 18px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;  
+    margin-right: 0px;
+    font-size: 14px;
+  }
 `
 
 export const Email = styled.div`
@@ -43,15 +68,15 @@ export const Email = styled.div`
 export const Phone = styled.div`
   padding-bottom: 24px;
   padding-left: 5px;
-
 `
 
 export const Location = styled.div`
   padding-bottom: 60px;
   padding-left: 5px;
-
 `
 
 export const Icons = styled.div`
   display: flow;
+  @media (max-width: 768px) {
+  }
 `

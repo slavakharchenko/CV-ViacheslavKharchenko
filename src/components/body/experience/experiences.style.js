@@ -1,54 +1,63 @@
 import styled from "styled-components";
 
-export const ScrollContainer = styled.div`
-  overflow-y: scroll;
-`;
-
-export const Container = styled.section`
+export const ContainerWrapper = styled.div`
   color: black;
-  
-  background-size: 100%;
   background-color: rgb(245,247,249);
-`;
-
-export const ExperiencesWrapper = styled.div`
   padding-top: 160px;
 
-  margin-left: 100px;
-  margin-right: 100px;
+  padding-right: 100px;
+  padding-left: 100px;
+    
+  @media (max-width: 768px) {
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 `
 
 export const GridWrapper = styled.div`
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
-  grid-template-rows: 0.5fr 0.5fr;
-  grid-template-areas: "project project" 
-                       "position duration"
-                       "task task"
-                       "chips link";
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 80px;
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-column-gap: 0px;
+  }
 `;
 
 export const ExperienceWrapper = styled.div`
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+
+  @media (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 `;
 
 export const Project = styled.div`
-  grid-area: project;
   color: rgb(239, 70, 63);
   font-size: 24px;
+  
+  @media (max-width: 768px) {
+    padding-top: 20px;
+    font-size: 20px;
+  }
 `
 
 export const Position = styled.div`
-  grid-area: position;
   margin-top: 20px;
   margin-bottom: 5px;
   color: black;
   font-size: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `
 
 export const Duration = styled.div`
-  grid-area: duration;
   margin-bottom: 40px;
   color: rgb(36,32,43);
   font-size: 14px;

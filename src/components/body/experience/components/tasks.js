@@ -8,6 +8,10 @@ import Slash from '../../../slashes';
 const TasksList = styled(ListGroup)`
   font-size: 20px;
   padding-bottom: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 const TaskList = styled(ListGroup.Item)`

@@ -5,6 +5,10 @@ import styled from "styled-components";
 const LowLineWrapper = styled.span`
   font-size: ${({ size }) => size };
   color: rgb(239, 70, 63);
+
+  @media(max-width : 768px) {
+    font-size: 40px;
+  }
 `;
 
 const LowLine = ({ size }) => {

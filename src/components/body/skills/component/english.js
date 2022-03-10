@@ -15,6 +15,11 @@ const EnglishWrapper = styled.div`
   span:last-child {
     color: rgb(239, 70, 63);
   }
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    padding: 50px 0px;
+  }
 `
 
 const EnglishLevel = () => {

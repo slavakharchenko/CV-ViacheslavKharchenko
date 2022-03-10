@@ -1,14 +1,17 @@
 import PropTypes from 'prop-types';
 import styled from "styled-components";
-import {ListGroup} from "react-bootstrap";
 
-const LinksWrapper = styled(ListGroup)`
+const LinksWrapper = styled.div`
   font-size: 24px;
   padding-bottom: 16px;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
+  
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
-const LinkWrapper = styled(ListGroup.Item)`
+const LinkWrapper = styled.div`
   padding-bottom: 16px;
   
   a {

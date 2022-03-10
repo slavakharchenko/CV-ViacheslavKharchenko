@@ -8,7 +8,14 @@ const Header = styled.h1`
   padding-bottom: ${({ paddingBottom }) => paddingBottom };
   span {
     color: rgb(239, 70, 63);
-  } 
+  }
+
+  @media(max-width : 768px) {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
 `;
 
 const Title = ({ title, paddingBottom = '120px' }) => {
