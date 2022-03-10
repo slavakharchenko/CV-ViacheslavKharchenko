@@ -76,7 +76,7 @@ export const Location = styled.div`
 `
 
 export const Icons = styled.div`
-  display: flow;
+  display: flex;
   @media (max-width: 768px) {
   }
 `

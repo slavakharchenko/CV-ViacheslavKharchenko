@@ -38,6 +38,9 @@ export const SecondPhrase = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: right;
+  display: -webkit-flex;
+  -webkit-justify-content: flex-end;
+  
   color: black;
   
   @media (max-width: 768px) {

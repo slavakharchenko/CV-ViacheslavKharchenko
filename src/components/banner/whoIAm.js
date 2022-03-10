@@ -66,6 +66,8 @@ export const SecondPhrase = styled.div`
   align-items: center;
   justify-content: right;
   color: black;
+  display: -webkit-flex;
+  -webkit-justify-content: flex-end;
 
   @media (max-width: 768px) {
     height: 100px;
