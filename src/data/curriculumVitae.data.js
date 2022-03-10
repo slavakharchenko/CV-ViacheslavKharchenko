@@ -1,7 +1,7 @@
 const cv = {
     aboutMe: {
         position: 'Automation QA Lead/SDET',
-        content: 'Hey, how are you, buddy? Hope all is well! I am Viacheslav Kharchenko and this is my CV.'
+        content: 'Hey, how are you? Hope all is well! I am Viacheslav Kharchenko and this is my CV.'
     },
     experiences: [
         {
