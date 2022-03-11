@@ -5,8 +5,8 @@ const LinksWrapper = styled.div`
   font-size: 24px;
   padding-bottom: 16px;
   letter-spacing: 1px;
-  
-  @media (max-width: 768px) {
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     font-size: 16px;
   }
 `;

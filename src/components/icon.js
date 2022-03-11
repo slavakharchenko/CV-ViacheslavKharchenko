@@ -8,11 +8,17 @@ const Container = styled.div`
   height: 44px;
   width: 43px;
   margin: 14px;
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     height: 36px;
     width: 36px;  
     margin: 13px;
   }
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+    height: 36px;
+    width: 36px;
+    margin: 13px;
+  }
+  
 `
 
 const Image = styled.img`

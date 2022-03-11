@@ -14,7 +14,7 @@ export const ListWrapper = styled(ListGroup)`
     grid-column-gap: 80px;
   ` : undefined};
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     font-size: 16px;
     padding-bottom: 16px;
 
@@ -31,7 +31,7 @@ export const ListItem = styled(ListGroup.Item)`
 export const SkillWrapper = styled.div`
   padding-top: ${props => isTechStack(props) ? '100px' : '0px'};
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     padding-top: 0px;
   }
 `

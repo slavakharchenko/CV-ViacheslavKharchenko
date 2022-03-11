@@ -12,8 +12,12 @@ export const BannerWrapper = styled.div`
   margin-left: 100px;
   margin-bottom: 70px;
 
-  @media (max-width: 768px) {
-    height: 700px;
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1555px) {
+    height: 500px;
+    font-size: 60px;
+    margin: 40px 10px;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     font-size: 40px;
     margin: 40px 10px;
   }
@@ -26,7 +30,11 @@ export const FirstPhrase = styled.div`
   align-items: center;
   color: rgb(239, 70, 63);
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1555px) {
+    height: 100px;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     height: 100px;
   }
 `;
@@ -36,21 +44,34 @@ export const Images = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
   img {
     max-width: 95%;
     max-height: 95%;
   }
-
   img:nth-child(odd) {
     transform: rotate(-4.95deg);
   }
-
   img:nth-child(even) {
     transform: rotate(4.95deg);
   }
-  
-  @media (max-width: 768px) {
+
+  @media only screen and (min-device-width: 1281px) and (max-device-width: 1440px) {
+    height: 300px;
+    img {
+      max-height: 500px;
+      max-width: 400px;
+    }
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1280px) {
+    height: 300px;
+    img {
+      max-height: 325px;
+      max-width: 250px;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     height: 500px;
     flex-direction: column;
     img {
@@ -69,7 +90,7 @@ export const SecondPhrase = styled.div`
   display: -webkit-flex;
   -webkit-justify-content: flex-end;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1555px) {
     height: 100px;
   }
 `;

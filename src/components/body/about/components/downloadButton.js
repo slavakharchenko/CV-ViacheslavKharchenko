@@ -20,8 +20,8 @@ const Button = styled.button`
   :hover {
     background-color: rgb(236, 26, 19);
   }
-  
-  @media (max-width: 768px) {
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     margin: 15px 0px 0px 0px;
   }
 `

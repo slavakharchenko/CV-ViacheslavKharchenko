@@ -6,8 +6,8 @@ const Image = styled.img`
   max-width: 350px;
   width: 100%;
   height: 100%;
-  
-  @media (max-width: 768px) {
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     max-height: 250px;
     max-width: 250px;
   }

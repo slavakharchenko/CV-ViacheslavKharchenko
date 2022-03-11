@@ -16,7 +16,7 @@ const EnglishWrapper = styled.div`
     color: rgb(239, 70, 63);
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     font-size: 24px;
     padding: 50px 0px;
   }

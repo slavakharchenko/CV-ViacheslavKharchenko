@@ -6,10 +6,16 @@ export const Container = styled.section`
   margin-right: 100px;
   color: black;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     margin-top: 60px;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 `;
 
@@ -29,7 +35,7 @@ export const SkillWrapper = styled.div`
     color: rgb(239, 70, 63);
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr;

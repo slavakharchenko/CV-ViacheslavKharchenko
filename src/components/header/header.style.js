@@ -13,7 +13,7 @@ export const NavHeader = styled.nav`
   z-index: 1;
   background: rgb(36,32,43);
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr;
@@ -28,7 +28,7 @@ export const Links = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,10 +41,15 @@ export const Link = styled.a`
   color: white; 
   font-size: 30px;
   padding-right: 60px;
-  
-  @media (max-width: 768px) {
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     padding: 10px;
     font-size: 20px;
+  }
+
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+    padding: 15px;
+    font-size: 24px;
   }
 `
 
@@ -55,8 +60,12 @@ export const Icons = styled.div`
   align-items: center;
   margin-right: 100px;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     margin-right: 0px;
+  }
+
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+    margin-right: 50px;
   }
 `
 
@@ -67,9 +76,15 @@ export const BrandContainer = styled.div`
   align-items: center;
   margin-left: 100px;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     justify-content: flex-end;
     min-height: 75px;
     margin-left: 0px;
+  }
+
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+    justify-content: flex-start;
+    min-height: 75px;
+    margin-left: 40px;
   }
 `

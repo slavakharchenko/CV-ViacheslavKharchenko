@@ -9,7 +9,7 @@ export const FooterWrapper = styled.footer`
   background: rgb(36,32,43);
   padding-top: 60px;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template: 'content' 
@@ -26,7 +26,7 @@ export const ContentWrapper = styled.div`
     font-size: 24px;
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,6 +37,10 @@ export const ContentWrapper = styled.div`
       font-size: 16px;
       text-align:center;
     }
+  }
+
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+    margin-left: 50px;
   }
 `
 
@@ -51,7 +55,7 @@ export const ContactWrapper = styled.div`
   margin-right: 100px;
   font-size: 18px;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     justify-content: center;
     align-items: center;
     padding-top: 50px;  

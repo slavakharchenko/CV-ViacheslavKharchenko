@@ -7,11 +7,17 @@ export const ContainerWrapper = styled.div`
 
   padding-right: 100px;
   padding-left: 100px;
-    
-  @media (max-width: 768px) {
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     padding-top: 60px;
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+    padding-top: 60px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 `
 
@@ -20,7 +26,7 @@ export const GridWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 80px;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     display: grid;
     grid-template-columns: 1fr; 
     grid-column-gap: 0px;
@@ -30,7 +36,7 @@ export const GridWrapper = styled.div`
 export const ExperienceWrapper = styled.div`
   padding-bottom: 100px;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -39,8 +45,8 @@ export const ExperienceWrapper = styled.div`
 export const Project = styled.div`
   color: rgb(239, 70, 63);
   font-size: 24px;
-  
-  @media (max-width: 768px) {
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     padding-top: 20px;
     font-size: 20px;
   }
@@ -52,7 +58,7 @@ export const Position = styled.div`
   color: black;
   font-size: 40px;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     font-size: 24px;
   }
 `

@@ -16,7 +16,7 @@ export const AboutWrapper = styled.div`
   width: auto;
   padding: 120px 100px;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     // Split on two rows
     display: grid;
     grid-template-columns: 1fr;
@@ -27,10 +27,14 @@ export const AboutWrapper = styled.div`
     padding: 60px 10px;
     margin-top: 119px;
   }
+
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+    padding: 60px 50px;
+  }
 `
 
 export const ContentWrapper = styled.div`
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     display: flex;
     align-content: center;
     align-items: center;
@@ -38,7 +42,6 @@ export const ContentWrapper = styled.div`
     width: 100%;
     padding-top: 60px;
     text-align:center;
-
   }
 `
 
@@ -61,7 +64,7 @@ export const DownloadWrapper = styled.div`
     margin-left: 140px;
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     padding-top: 20px;
     flex-direction: column;
     font-size: 20px;

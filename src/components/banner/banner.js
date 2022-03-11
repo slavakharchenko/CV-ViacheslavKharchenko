@@ -8,11 +8,17 @@ export const BannerWrapper = styled.div`
   margin-right: 100px;
   margin-left: 100px;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     height: 350px;
     font-size: 40px;
     margin-right: 10px;
     margin-left: 10px;
+  }
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1555px) {
+    height: 700px;
+    font-size: 80px;
+    margin-right: 50px;
+    margin-left: 50px;
   }
 `;
 
@@ -24,11 +30,17 @@ export const FirstPhrase = styled.div`
   justify-content: left;
   color: rgb(239, 70, 63);
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     height: 175px;
+  }
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1555px) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 350px;
   }
 `;
 
@@ -42,9 +54,16 @@ export const SecondPhrase = styled.div`
   -webkit-justify-content: flex-end;
   
   color: black;
-  
-  @media (max-width: 768px) {
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     height: 175px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1555px) {
+    height: 350px;
     display: flex;
     align-items: flex-start;
     justify-content: center;

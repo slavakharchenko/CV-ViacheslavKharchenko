@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Text = styled.div`
   font-size: 24px;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     font-size: 16px;
     padding: 20px;
   }
