@@ -1,21 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 160px;
-  margin-left: 100px;
-  margin-right: 100px;
+  padding: 160px 100px 0px 100px;
   color: black;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-    margin-top: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 60px 20px 0px 20px;
   }
 
   @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-    margin-top: 60px;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding: 60px 50px 0px 50px;
   }
 `;
 

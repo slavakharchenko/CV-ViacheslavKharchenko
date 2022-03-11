@@ -3,21 +3,14 @@ import styled from "styled-components";
 export const ContainerWrapper = styled.div`
   color: black;
   background-color: rgb(245,247,249);
-  padding-top: 160px;
-
-  padding-right: 100px;
-  padding-left: 100px;
-
+  padding: 160px 100px 0px 100px;
+  
   @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-    padding-top: 60px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 60px 20px 0px 20px;
   }
 
   @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-    padding-top: 60px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 60px 50px 0px 50px;
   }
 `
 

@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
-  // For header
-  margin-top: 120px;
-  
   // Split on two columns
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -14,7 +11,7 @@ export const AboutWrapper = styled.div`
   background-color: rgb(36,32,43);
   max-width: 3000px;
   width: auto;
-  padding: 120px 100px;
+  padding: 240px 100px 120px 100px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     // Split on two rows
@@ -24,8 +21,7 @@ export const AboutWrapper = styled.div`
     grid-template-areas: "photo" 
                           "content";
     // Styles
-    padding: 60px 10px;
-    margin-top: 119px;
+    padding: 180px 10px 60px 10px;
   }
 
   @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
