@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from './components/header/header';
 import About from './components/body/about/about';
 import Experiences from './components/body/experience/experiences';

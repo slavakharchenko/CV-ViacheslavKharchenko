@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -23,7 +24,7 @@ const LinkWrapper = styled.div`
 const Link = ({ links }) => {
   const linksList = links.map((link, index) => (
     <LinkWrapper key={index}>
-      <a target='_blank' rel='noreferrer' href={link}>
+      <a target='_blank' rel='noopener noreferrer' href={link}>
         {link.toUpperCase()}
       </a>
     </LinkWrapper>

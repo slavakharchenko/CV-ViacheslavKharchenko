@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavHeader, Links, Icons, Link, BrandContainer } from './header.style';
 import Icon from '../icon';
 import Brand from './components/brand';

@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import linkedIn from '../images/linkedIn.svg';
 import email from '../images/email.svg';
@@ -55,7 +56,7 @@ const Icon = ({ name }) => {
   const { link, svg } = getIcon(name);
   return (
     <Container>
-      <a target='_blank' rel='noreferrer' href={link}>
+      <a target='_blank' rel='noopener noreferrer' href={link}>
         <Image src={svg} alt={name} />
       </a>
     </Container>

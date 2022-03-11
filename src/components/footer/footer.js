@@ -1,3 +1,4 @@
+import React from 'react';
 import { ContactWrapper, ContentWrapper, FooterWrapper, Icons, Email, Phone, Location } from './footer.style';
 import Title from '../title';
 import PropTypes from 'prop-types';

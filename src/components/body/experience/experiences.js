@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import Tasks from './components/tasks';
 import Title from '../../title';
