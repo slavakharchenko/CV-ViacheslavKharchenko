@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContainerWrapper = styled.div`
   color: black;
-  background-color: rgb(245,247,249);
+  background-color: rgb(245, 247, 249);
   padding: 160px 100px 0px 100px;
-  
+
   @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     padding: 60px 20px 0px 20px;
   }
@@ -12,7 +12,7 @@ export const ContainerWrapper = styled.div`
   @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
     padding: 60px 50px 0px 50px;
   }
-`
+`;
 
 export const GridWrapper = styled.div`
   display: grid;
@@ -21,7 +21,7 @@ export const GridWrapper = styled.div`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     grid-column-gap: 0px;
   }
 `;
@@ -43,7 +43,7 @@ export const Project = styled.div`
     padding-top: 20px;
     font-size: 20px;
   }
-`
+`;
 
 export const Position = styled.div`
   margin-top: 20px;
@@ -54,11 +54,11 @@ export const Position = styled.div`
   @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     font-size: 24px;
   }
-`
+`;
 
 export const Duration = styled.div`
   margin-bottom: 40px;
-  color: rgb(36,32,43);
+  color: rgb(36, 32, 43);
   font-size: 14px;
-  opacity: .5;
-`
+  opacity: 0.5;
+`;

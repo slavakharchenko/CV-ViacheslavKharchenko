@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from "styled-components";
-import LowLine from "../lowLine";
-import hobbyOne from "../../images/hobby.png";
-import hobbyTwo from "../../images/hobby2.png";
-import hobbyThree from "../../images/hobby3.png";
+import styled from 'styled-components';
+import LowLine from '../lowLine';
+import hobbyOne from '../../images/hobby.png';
+import hobbyTwo from '../../images/hobby2.png';
+import hobbyThree from '../../images/hobby3.png';
 
 export const BannerWrapper = styled.div`
   height: 700px;
@@ -26,7 +26,7 @@ export const BannerWrapper = styled.div`
 export const FirstPhrase = styled.div`
   height: 200px;
   display: flex;
-  justify-content: left;    
+  justify-content: left;
   align-items: center;
   color: rgb(239, 70, 63);
 
@@ -98,19 +98,17 @@ export const SecondPhrase = styled.div`
 const WhoIAm = () => {
   return (
     <BannerWrapper>
-      <FirstPhrase>
-        IT'S WHO I AM
-      </FirstPhrase>
+      <FirstPhrase>IT'S WHO I AM</FirstPhrase>
       <Images>
-        <img src={hobbyOne} alt='hobbies'/>
-        <img src={hobbyTwo} alt='hobbies'/>
-        <img src={hobbyThree} alt='hobbies'/>
+        <img src={hobbyOne} alt='hobbies' />
+        <img src={hobbyTwo} alt='hobbies' />
+        <img src={hobbyThree} alt='hobbies' />
       </Images>
       <SecondPhrase>
-        MY HOBBIES <LowLine size={'140px'}/>
+        MY HOBBIES <LowLine size={'140px'} />
       </SecondPhrase>
     </BannerWrapper>
   );
-}
+};
 
 export default WhoIAm;

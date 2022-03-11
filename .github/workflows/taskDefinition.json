@@ -21,9 +21,7 @@
   "executionRoleArn": "arn:aws:iam::930050429294:role/ecsTaskExecutionRole",
   "taskRoleArn": "arn:aws:iam::930050429294:role/ecsTaskExecutionRole",
   "family": "CV-APP",
-  "requiresCompatibilities": [
-    "EC2"
-  ],
+  "requiresCompatibilities": ["EC2"],
   "networkMode": null,
   "runtimePlatform": null
 }

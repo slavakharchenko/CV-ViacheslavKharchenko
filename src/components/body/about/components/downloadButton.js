@@ -11,12 +11,12 @@ const Button = styled.button`
   margin: 15px;
   max-width: 300px;
   width: 100%;
-  
+
   a {
     text-decoration: none;
     color: white;
   }
-  
+
   :hover {
     background-color: rgb(236, 26, 19);
   }
@@ -24,14 +24,16 @@ const Button = styled.button`
   @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     margin: 15px 0px 0px 0px;
   }
-`
+`;
 
 const DownloadButton = () => {
   return (
     <Button>
-      <a href={downloadLink} download>DOWNLOAD RESUME</a>
+      <a href={downloadLink} download>
+        DOWNLOAD RESUME
+      </a>
     </Button>
   );
-}
+};
 
 export default DownloadButton;

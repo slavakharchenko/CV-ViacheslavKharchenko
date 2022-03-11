@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Text = styled.div`
   font-size: 24px;
@@ -12,12 +12,8 @@ const Text = styled.div`
 `;
 
 const Content = ({ content }) => {
-  return (
-    <Text>
-      {content}
-    </Text>
-  );
-}
+  return <Text>{content}</Text>;
+};
 
 Content.propTypes = {
   content: PropTypes.string,

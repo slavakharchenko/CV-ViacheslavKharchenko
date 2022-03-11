@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import photo from '../../../../images/photo.png'
+import styled from 'styled-components';
+import photo from '../../../../images/photo.png';
 
 const Image = styled.img`
   max-height: 350px;
@@ -11,12 +11,10 @@ const Image = styled.img`
     max-height: 250px;
     max-width: 250px;
   }
-`
+`;
 
 const Photo = () => {
-  return (
-    <Image src={photo} alt='Photo'/>
-  );
-}
+  return <Image src={photo} alt='Photo' />;
+};
 
 export default Photo;

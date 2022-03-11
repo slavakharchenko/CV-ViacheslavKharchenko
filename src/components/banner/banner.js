@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from "styled-components";
-import LowLine from "../lowLine";
+import styled from 'styled-components';
+import LowLine from '../lowLine';
 
 export const BannerWrapper = styled.div`
   height: 700px;
@@ -52,7 +52,7 @@ export const SecondPhrase = styled.div`
   justify-content: right;
   display: -webkit-flex;
   -webkit-justify-content: flex-end;
-  
+
   color: black;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
@@ -70,18 +70,15 @@ export const SecondPhrase = styled.div`
   }
 `;
 
-
 const Banner = () => {
   return (
     <BannerWrapper>
-      <FirstPhrase>
-        KEEP CALM &
-      </FirstPhrase>
+      <FirstPhrase>KEEP CALM &</FirstPhrase>
       <SecondPhrase>
-        WRITE CODE <LowLine size={'140px'}/>
+        WRITE CODE <LowLine size={'140px'} />
       </SecondPhrase>
     </BannerWrapper>
   );
-}
+};
 
 export default Banner;
