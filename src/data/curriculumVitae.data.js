@@ -7,7 +7,7 @@ const cv = {
     {
       position: 'Sr. Automation QA / AQA Lead ',
       company: 'Parimatch Tech',
-      duration: 'AQA: March 2020 – August 2022, AQA Lead: September 2022 - till present',
+      duration: 'AQA: March 2020 – August 2021, AQA Lead: September 2021 - till present',
       projectLinks: ['https://en.parimatch.com/en/'],
       tasks: [
         'Create AQA processes from scratch',
