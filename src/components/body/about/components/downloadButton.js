@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const downloadLink = 'https://drive.google.com/uc?export=download&id=1Pfy_QLV6aD8eOBPsO2qRO3qwYu2NRks0';
+const downloadLink = 'https://drive.google.com/uc?export=download&id=1eSWPH67wvdRWntr8ZkP5jsI_fqdAVVXh';
 
 const Button = styled.button`
   background-color: rgb(239, 70, 63);
