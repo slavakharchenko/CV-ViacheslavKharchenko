@@ -103,7 +103,7 @@ const cv = {
       skills: [
         'Experience in creating AQA processes from scratch. Hiring and mentoring teammates',
         'Experience in writing integration tests for microservices. Integrated them in the pipeline for running it for each commit',
-        'Experience in writing automated UI/API tests: JavaScript/Typescript (WebdriverIO, Mocha, Chai)',
+        'Experience in writing automated UI/API tests: JavaScript/Typescript (Playwright/WebdriverIO, Mocha, Chai)',
         'Experience in writing automated UI/API tests: Python (Pytest, Selenium)',
         'Experience in visual testing with Applitools',
         'Familiar with writing performance tests with JMeter',
