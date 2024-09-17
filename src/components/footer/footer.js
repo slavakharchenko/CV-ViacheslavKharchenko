@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactWrapper, ContentWrapper, FooterWrapper, Icons, Email, Phone, Location } from './footer.style';
+import { ContactWrapper, ContentWrapper, FooterWrapper, Icons, Email, Phone } from './footer.style';
 import Title from '../title';
 import PropTypes from 'prop-types';
 import Icon from '../icon';
@@ -14,7 +14,6 @@ const Footer = ({ info }) => {
       <ContactWrapper>
         <Email>{info.email}</Email>
         <Phone>{info.phone}</Phone>
-        <Location>{info.location}</Location>
 
         <Icons>
           <Icon name='email' />
